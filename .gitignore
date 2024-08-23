@@ -1,0 +1,6 @@
+__pycache__
+scratch.py
+.ipynb_checkpoints
+tmp
+.vscode
+.qt_for_python
