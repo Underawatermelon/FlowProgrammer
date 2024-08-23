@@ -165,10 +165,10 @@ class Trainer:
         if hasattr(
             cfg.data_cfg, "dataset_size"
         ) is False or cfg.data_cfg.dataset_size in [None, [9000, 1000]]:
-            train_x_dir = os.path.join(root_dir, "simgs_train/")
-            train_y_dir = os.path.join(root_dir, f"dtm{cfg.profile_size[0]}_train/")
-            valid_x_dir = os.path.join(root_dir, "simgs_valid/")
-            valid_y_dir = os.path.join(root_dir, f"dtm{cfg.profile_size[0]}_valid/")
+            train_x_dir = os.path.join(root_dir, "obs_imgs_train/")
+            train_y_dir = os.path.join(root_dir, f"tt{cfg.profile_size[0]}_train/")
+            valid_x_dir = os.path.join(root_dir, "obs_imgs_valid/")
+            valid_y_dir = os.path.join(root_dir, f"tt{cfg.profile_size[0]}_valid/")
             train_set = FDataset(
                 train_x_dir,
                 train_y_dir,
@@ -185,8 +185,8 @@ class Trainer:
             )
         else:
             dataset = FDataset(
-                os.path.join(root_dir, "simgs/"),
-                os.path.join(root_dir, f"dtm{cfg.profile_size[0]}/"),
+                os.path.join(root_dir, "obs_imgs/"),
+                os.path.join(root_dir, f"tt{cfg.profile_size[0]}/"),
                 transform=tf_x,
                 target_transform=tf_y,
                 total_num=sum(cfg.data_cfg.dataset_size),
