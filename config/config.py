@@ -272,10 +272,11 @@ class Config(EasyDict):
 
 
 def create_cfg_from_args(args):
-    model = args.model
+    mode = args.mode if args.mode is not None else "train"
+    model = args.model if args.model is not None else "CEyeNet"
     profile_size = args.profile_size if args.profile_size is not None else 200
     cfg = Config()
-    cfg.__build_default__("train", model, profile_size)
+    cfg.__build_default__(mode, model, profile_size)
     cfg.__assign_args__(args)
     return cfg
 

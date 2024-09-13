@@ -211,3 +211,8 @@ class MirochannelDesignSearcher:
         pf = pf.sum(axis=-1, keepdims=True)  # shape=(H, W, 1)
         pf = pf.clip(0, 255).astype(np.uint8)
         return pf
+    
+    def __call__(self, target_profile=r"../auto_search/target_profile.png", result_dir=r"../auto_search"):
+        self.set_task(target_profile=target_profile, result_dir=result_dir)
+        self.run()
+        
