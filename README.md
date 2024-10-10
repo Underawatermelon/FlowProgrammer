@@ -1,4 +1,4 @@
-<h1 align="center">Microfluidic Flow Programming for Complex Semantic Flow Profiles </br>Via Efficient Receptive Field Augmentation of Convolutional Neural Networks</h1>
+<h1 align="center">Deep-Learning-Enabled Microfluidic Flow Programming for Intricate Flow Manipulation</h1>
 <h4 align="center"><a href="https://doi.org/10.5281/zenodo.13363709"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.13363709.svg" alt="DOI"></a></h4>
 </h4>
 <div align="center">
@@ -16,7 +16,7 @@ Zhenyu Yang<sup>1,2,7</sup>, Zhongning Jiang<sup>3,7</sup>, Haisong Lin<sup>4,5<
 </div>
 
 ## Introduction and setup
-We introduce a framework for prediction of the flow transformation tensor induced by 'zigzag' obstacles in microchannels, heuristic design of microchannel for target output flow profiles, and  automatic searching of micochannel designs to output desired flow profiles. The framework is detailed in the manuscript *"Microfluidic Flow Programming for Complex Semantic Flow Profiles Via Efficient Receptive Field Augmentation of Convolutional Neural Networks"*.
+We introduce a framework for prediction of the flow transformation tensor induced by 'zigzag' obstacles in microchannels, heuristic design of microchannel for target output flow profiles, and  automatic searching of micochannel designs to output desired flow profiles. The framework is detailed in the manuscript *"Deep-Learning-Enabled Microfluidic Flow Programming for Intricate Flow Manipulation"*.
 
 To conduct similar studies as those presented in the manuscript, start by cloning this repository via
 ```
